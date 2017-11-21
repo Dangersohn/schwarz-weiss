@@ -1,1 +1,1 @@
-web: schwarz_weiss
+web: goendir
