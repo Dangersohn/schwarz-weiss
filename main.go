@@ -12,7 +12,7 @@ import (
 	"github.com/labstack/echo"
 )
 
-var a = []string{"01b.png", "02b.png", "03b.png", "04b.png", "05b.png", "06b.png", "07b.png", "08b.png", "09b.png", "10b.png", "11b.png", "12b.png", "13b.png", "14b.png", "15b.png", "16b.png", "01w.png", "02w.png", "03w.png", "04w.png", "05w.png", "06w.png", "07w.png", "08w.png", "09w.png", "10w.png", "11w.png", "12w.png", "13w.png", "14w.png", "15w.png", "16w.png"}
+var a = []string{"01b.jpg", "02b.jpg", "03b.jpg", "04b.jpg", "05b.jpg", "06b.jpg", "07b.jpg", "08b.jpg", "09b.jpg", "10b.jpg", "11b.jpg", "12b.jpg", "13b.jpg", "14b.jpg", "15b.jpg", "16b.jpg", "01w.jpg", "02w.jpg", "03w.jpg", "04w.jpg", "05w.jpg", "06w.jpg", "07w.jpg", "08w.jpg", "09w.jpg", "10w.jpg", "11w.jpg", "12w.jpg", "13w.jpg", "14w.jpg", "15w.jpg", "16w.jpg"}
 
 type Template struct {
 	templates *template.Template
