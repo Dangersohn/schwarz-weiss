@@ -1,1 +1,1 @@
-web: rot-schwarz
+web: schwarz-weiss
