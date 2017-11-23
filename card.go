@@ -2,7 +2,7 @@ package main
 
 import "regexp"
 
-//Card hat einen Namen und eine Farbe
+//Card hat einen Namen und  eine Farbe
 type Card struct {
 	Name  string
 	Color string
