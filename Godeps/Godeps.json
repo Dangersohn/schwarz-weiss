@@ -1,5 +1,5 @@
 {
-	"ImportPath": "rot-schwarz",
+	"ImportPath": "projekte/schwarz-weiss",
 	"GoVersion": "go1.9",
 	"GodepVersion": "v79",
 	"Packages": [
@@ -8,7 +8,7 @@
 	"Deps": [
 		{
 			"ImportPath": "github.com/labstack/echo",
-			"Comment": "3.2.4",
+			"Comment": "3.2.3-8-gb28538b",
 			"Rev": "b28538b2e3f5446fe6e0e47ee34cd74b662ca2ab"
 		},
 		{
@@ -41,15 +41,15 @@
 		},
 		{
 			"ImportPath": "golang.org/x/crypto/acme",
-			"Rev": "bd6f299fb381e4c3393d1c4b1f0b94f5e77650c8"
+			"Rev": "2509b142fb2b797aa7587dad548f113b2c0f20ce"
 		},
 		{
 			"ImportPath": "golang.org/x/crypto/acme/autocert",
-			"Rev": "bd6f299fb381e4c3393d1c4b1f0b94f5e77650c8"
+			"Rev": "2509b142fb2b797aa7587dad548f113b2c0f20ce"
 		},
 		{
 			"ImportPath": "golang.org/x/sys/unix",
-			"Rev": "75813c647272dd855bda156405bf844a5414f5bf"
+			"Rev": "a13efeb2fd213cf4be7227992aa54519af3b2ac0"
 		}
 	]
 }
