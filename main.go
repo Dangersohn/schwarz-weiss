@@ -11,6 +11,7 @@ import (
 	"github.com/labstack/echo"
 )
 
+// Template wird für das Rendern benötigt
 type Template struct {
 	templates *template.Template
 }
