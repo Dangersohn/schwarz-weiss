@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"html/template"
 	"io"
 	"log"
@@ -27,13 +28,23 @@ func main() {
 	}
 	e := echo.New()
 	e.Renderer = t
-	e.GET("/", showrandom)
+	e.GET("/", show)
+	e.GET("/start", start)
+	e.GET("/play", showrandom)
 	e.Static("/images/*", "images")
 	log.Fatal(e.Start(":" + os.Getenv("PORT")))
 }
 
 func show(c echo.Context) error {
-	return c.Render(http.StatusOK, "index.html", nil)
+	return c.Render(http.StatusOK, "new.html", nil)
+}
+
+func start(c echo.Context) error {
+	playerone = c.QueryParam("playerone")
+	playertwo = c.QueryParam("playertwo")
+	fmt.Println(playerone)
+	fmt.Println(playertwo)
+	return c.Redirect(307, "/play")
 }
 
 func showrandom(c echo.Context) error {
@@ -50,7 +61,13 @@ func showrandom(c echo.Context) error {
 		Name:  speicher,
 		Color: col,
 	}
-
 	a = remove(a, a[rnd])
-	return c.Render(http.StatusOK, "index.html", karte)
+
+	spiel := Game{
+		Playerone: playerone,
+		Playertwo: playertwo,
+		Cardnow:   karte,
+	}
+
+	return c.Render(http.StatusOK, "index.html", spiel)
 }
